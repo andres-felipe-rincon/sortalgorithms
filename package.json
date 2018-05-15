@@ -1,0 +1,28 @@
+{
+  "name": "sortalgorithms.github.io",
+  "version": "1.0.0",
+  "description": "Desarrollo de sitio web acerca de algoritmos de ordenamiento",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andres-felipe-rincon/sortalgorithms.github.io.git"
+  },
+  "keywords": [
+    "Sort",
+    "Algoritms"
+  ],
+  "author": "Andrés Felipe Rincón <afrincon0@unadvirtual.edu.co>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andres-felipe-rincon/sortalgorithms.github.io/issues"
+  },
+  "homepage": "https://github.com/andres-felipe-rincon/sortalgorithms.github.io#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1"
+  }
+}
