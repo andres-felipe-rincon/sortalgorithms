@@ -12,11 +12,11 @@ body {
 header .top-header {
   background: #005883;
   background-size: cover;
-  height: 200px;
-  position: relative;
   border: 1px solid;
-  padding: 10px;
   box-shadow: 4px 8px #F0B429;
+  height: 200px;
+  padding: 10px;
+  position: relative;
 }
 
 header .top-header .top-text {
@@ -107,17 +107,17 @@ nav.active .hamburger i:after {
           transform: rotate(-45deg);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   /* top header */
   header .top-header {
-    min-height: 250px;
     margin-bottom: 10px;
+    min-height: 250px;    
   }
   header .top-header .top-text {
     left: 10%;
     position: relative;
     text-align: center;
-    top: 2%;
+    top: 7%;
   }
 
   header .top-header .top-text h1 {
@@ -165,4 +165,10 @@ nav.active .hamburger i:after {
     max-width: 950px;
   }
 }
-
+/*
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .wrapper {
+    max-width: 950px;
+  }
+}
+*/
