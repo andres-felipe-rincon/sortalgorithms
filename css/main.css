@@ -4,11 +4,7 @@ body {
 
 .wrapper {  
   margin: 0 auto;
-<<<<<<< HEAD
-  max-width: 1200px;  
-=======
   max-width: 1144px;
->>>>>>> ba9a691cc767a570aaa6c64d5d5d3fcee3951833
 }
 
 /* top-header */
@@ -111,9 +107,6 @@ nav.active .hamburger i:after {
           transform: rotate(-45deg);
 }
 
-<<<<<<< HEAD
-@media screen and (max-width: 600px) {
-=======
 /* End Header Section */
 
 /* start content section*/
@@ -145,7 +138,6 @@ nav.active .hamburger i:after {
 }
 
 @media screen and (max-width: 768px) {
->>>>>>> ba9a691cc767a570aaa6c64d5d5d3fcee3951833
   /* top header */
   header .top-header {
     min-height: 250px;
