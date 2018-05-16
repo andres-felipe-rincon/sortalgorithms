@@ -7,6 +7,27 @@ body {
   max-width: 1200px;  
 }
 
+/* top-header */
+
+header .top-header {
+  background: #005883;
+  background-size: cover;
+  height: 200px;
+  position: relative;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 4px 8px #F0B429;
+}
+
+header .top-header .top-text {
+  color: white;
+  left: 60%;
+  position: absolute;
+  text-align: right;
+  top: 50%;  
+  transform: translate(-10%, -40%);  
+}
+
 /* Flex Nav Bar */
 .flex-nav {
   background: #005883;  
@@ -115,3 +136,10 @@ nav.active .hamburger i:after {
     height: initial;    
   }
 }
+
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+  .wrapper {
+    max-width: 750px;
+  }
+}
+
