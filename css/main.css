@@ -4,7 +4,11 @@ body {
 
 .wrapper {  
   margin: 0 auto;
+<<<<<<< HEAD
   max-width: 1200px;  
+=======
+  max-width: 1144px;
+>>>>>>> ba9a691cc767a570aaa6c64d5d5d3fcee3951833
 }
 
 /* top-header */
@@ -107,7 +111,41 @@ nav.active .hamburger i:after {
           transform: rotate(-45deg);
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 600px) {
+=======
+/* End Header Section */
+
+/* start content section*/
+
+/* Start Footer section */
+
+/* End Footer section */
+
+@media screen and (max-width: 1200px) {
+  .wrapper {  
+    margin: 0 auto;
+    max-width: 970px;  
+  }
+
+  .footer { 
+    width: 970px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .wrapper {  
+    margin: 0 auto;
+    max-width: 750px;  
+  }
+
+  .footer { 
+    width: 750px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+>>>>>>> ba9a691cc767a570aaa6c64d5d5d3fcee3951833
   /* top header */
   header .top-header {
     min-height: 250px;
