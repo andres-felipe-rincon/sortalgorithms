@@ -112,7 +112,16 @@ nav.active .hamburger i:after {
 /* start content section*/
 
 /* Start Footer section */
-
+footer{
+  background: #005883;
+  bottom: 0;
+  height: 50px;  
+  margin: 50px;
+  max-width: 1200px;  
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+}
 /* End Footer section */
 
 @media screen and (max-width: 1200px) {
@@ -195,18 +204,3 @@ nav.active .hamburger i:after {
     max-width: 950px;
   }
 }
-
-footer{
-  background: #005883;
-  background-size: cover;
-  width: 100%;
-  height: 50px;
-  position: fixed;
-  bottom: 0;
-  border: 1px solid;
-  box-shadow: 4px 8px #F0B429;
-  margin: 50px;
-  max-width: 1200px;  
-  padding: 10px;
-}
-
