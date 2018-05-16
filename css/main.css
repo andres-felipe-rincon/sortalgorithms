@@ -114,11 +114,8 @@ nav.active .hamburger i:after {
 /* Start Footer section */
 footer{
   background: #005883;
-  bottom: 0;
-  height: 50px;  
-  margin: 50px;
-  max-width: 1200px;  
-  padding: 10px;
+  bottom: 0;    
+  max-width: 1144px;  
   position: fixed;
   width: 100%;
 }
