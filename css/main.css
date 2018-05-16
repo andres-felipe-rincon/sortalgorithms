@@ -111,16 +111,22 @@ nav.active .hamburger i:after {
   /* top header */
   header .top-header {
     min-height: 250px;
+    margin-bottom: 10px;
   }
   header .top-header .top-text {
     left: 10%;
     position: relative;
     text-align: center;
-    top: 0;
+    top: 2%;
   }
 
   header .top-header .top-text h1 {
     font-size: 1.6em;
+  }
+
+  header .top-header .top-image img {
+    display: block;
+    margin: 0 auto;    
   }
 
   /* nav menu*/
@@ -156,7 +162,7 @@ nav.active .hamburger i:after {
 
 @media screen and (min-width: 601px) and (max-width: 1200px) {
   .wrapper {
-    max-width: 750px;
+    max-width: 950px;
   }
 }
 
