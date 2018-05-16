@@ -8,7 +8,6 @@ Proyecto con el cual se manejara la presentacion del proyecto de algoritmos de o
 - [Agregar llaves de autenticación a la cuenta de GitHub](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
 - [Descargar el repositorio]
 
-
 ## Licencia
 
 Este proyecto se esta tabajando bajo  [MIT license](https://opensource.org/licenses/MIT). 
