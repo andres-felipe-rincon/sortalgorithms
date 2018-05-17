@@ -259,7 +259,6 @@ nav.active .hamburger i:after {
 /* Start Footer section */
 footer{
   background: #005883;
-  box-shadow: 4px 8px #F0B429;
   color: white;
   bottom: 10;    
   max-width: 1144px;  
