@@ -341,4 +341,14 @@ footer{
     height: initial;    
   }
   /* end nav */
+
+  /* Start content section */
+  .content {
+    flex-direction: column;
+  }
+
+  .cards {    
+    flex-direction: column;    
+  }
+  /* End content section */
 }
