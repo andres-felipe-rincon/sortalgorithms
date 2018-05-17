@@ -259,11 +259,12 @@ nav.active .hamburger i:after {
 /* Start Footer section */
 footer{
   background: #005883;
+  box-shadow: 4px 8px #F0B429;
   color: white;
-  bottom: 0;    
+  bottom: 10;    
   max-width: 1144px;  
-  position: fixed;
-  width: 100%;
+  position: 0px;
+  width: auto;
 }
 /* End Footer section */
 
