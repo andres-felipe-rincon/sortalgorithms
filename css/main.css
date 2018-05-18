@@ -236,7 +236,7 @@ nav.active .flex-nav li {
     display: flex;
     flex-direction: column;
 }
-.main-content h2 {
+.info-content h2 {
     font-size: 1.6em;    
 }
 /* End main Content Section */
@@ -595,9 +595,9 @@ footer {
     .main-content .main-info{
         flex-direction: row;
     }
-    .main-content h2 {
+    .info-content h2 {
         font-size: 2em;
-        margin-bottom: 10px;
+        margin-bottom: 10px;        
     }
     /* End main Content Section */
     /* Start Card Content Section */
