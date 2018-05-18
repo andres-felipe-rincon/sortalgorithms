@@ -147,8 +147,7 @@ header .banner h1 {
     color: transparent;
     display: none;
     flex: 1;
-    text-align: center;
-    height: 0;
+    text-align: center;       
     transition: height 1s ease;    
 }
 .flex-nav > li:not(:first-child) {
@@ -156,12 +155,15 @@ header .banner h1 {
 }
 .flex-nav li a {
     color: white;
-    display: block; 
+    margin: 0 auto;
+    display: inline-block; 
     font-weight: 400;
     padding: 20px 0;  
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+    width: 100%;
+    height: 100%;
 }
 nav .hamburger {
     border: 3px solid #ecf0f1;
@@ -335,6 +337,7 @@ nav.active .flex-nav li {
     color: #333333;
     font-size: 26px;
     font-weight: 700;
+    height: 60px;
 }
 .card .post-content .sub-title {
     margin: 0;
@@ -348,6 +351,18 @@ nav.active .flex-nav li {
     color: #666666;
     font-size: 14px;
     line-height: 1.8em;
+}
+.card .post-content .button {
+    margin-top: 10px;
+    background-color: #005883;
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
 }
 /* End Article Cards section */
 
@@ -560,7 +575,6 @@ footer {
     .flex-nav li {
         color: inherit;
         display: flex;
-        height: 65px;
         transition: all .2s ease;
     }
     .flex-nav li:not(:first-child) {
@@ -568,10 +582,9 @@ footer {
     }
     .flex-nav li:hover {
         background: #2980b9;
-        flex: 1.1;
     }
     .flex-nav li a {
-        text-transform: capitalize;
+        text-transform: capitalize;        
     }
     /* Hamburger Icon */
     nav .hamburger {
