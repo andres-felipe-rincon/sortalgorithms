@@ -8,3 +8,12 @@ $('.card').hover(function() {
     opacity: "toggle"
   }, 300);
 });
+
+$('.more-info').click(function(){
+  $(".profile-card").toggleClass('flip');
+  $('#arrow').remove();
+});
+
+$('#background').click(function(){
+  $('.profile-card').removeClass('flip');
+});
