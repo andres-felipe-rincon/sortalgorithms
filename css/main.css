@@ -234,6 +234,9 @@ nav.active .flex-nav li {
     display: flex;
     flex-direction: column;
 }
+.main-content h2 {
+    font-size: 1.6em;    
+}
 /* End main Content Section */
 
 /* Start Article Cards section */
@@ -346,7 +349,7 @@ nav.active .flex-nav li {
     font-size: 14px;
     line-height: 1.8em;
 }
-/* Start Article Cards section */
+/* End Article Cards section */
 
 /* Start Footer Section */
 footer {
@@ -419,6 +422,10 @@ footer {
     /* Start main Content Section */
     .main-content .main-info{
         flex-direction: row;
+    }
+    .main-content h2 {
+        font-size: 2em;
+        margin-bottom: 10px;
     }
     /* End main Content Section */
     /* Start Card Content Section */
