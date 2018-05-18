@@ -137,7 +137,6 @@ header .banner h1 {
     font-size: 1.6em;
 }
 /* End Mobile Header Section */
-
 /* Start Mobile Nav Section */
 .flex-nav {
     background: #005883;
@@ -264,6 +263,11 @@ nav.active .flex-nav li {
     -o-transition: all 0.3s linear 0s;
     transition: all 0.3s linear 0s;
 }
+
+.card-profile{
+    flex-grow: 2;
+}
+
 .card:hover,
 .hover {
   -webkit-box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
