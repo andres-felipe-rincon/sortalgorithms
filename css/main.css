@@ -423,7 +423,7 @@ nav.active .flex-nav li {
     display: table;*/
     left: 0;
     bottom: 0;
-    background: rgba(200, 38, 29, 0.7);
+    background: rgb(0, 88, 131);
     padding: 50px;
 }
 .profile-card #front #social-bar {
@@ -438,14 +438,14 @@ nav.active .flex-nav li {
 }
 .profile-card #front #social-bar a {
     display: inline-block;
-    color: #951009;
+    color: white;
     text-decoration: none;
     padding: 5px;
     line-height: 18px;
     border-radius: 5px;
 }
 .profile-card #front #social-bar a:hover {
-    color: #450300;
+    color: white;
     background: rgba(255, 255, 255, 0.3);
     transition: .25s ease-in-out;
 }
@@ -500,7 +500,7 @@ nav.active .flex-nav li {
 }
 .profile-card .info h2 {
     font-size: 15px;
-    color: #6b0500;
+    color: white;
 }
 .profile-card.flip #front {
     transform: rotateY(180deg);
