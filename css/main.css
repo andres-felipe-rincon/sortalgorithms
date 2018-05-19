@@ -548,6 +548,79 @@ footer {
     text-decoration: none;
 }
 
+/* Start Bubble-Sort */
+
+pre {
+  overflow-x: auto;
+  text-align: left;
+  height: 100%;
+}
+
+.main-sort .card{
+  padding: 5px;
+  width: 50%;
+}
+
+.main-sort h2{
+  font-size: 1.6em;
+}
+
+.main-sort h3{
+  font-size: 1.4em;
+}
+
+.main-sort h4{
+  font-size: 1.2em;
+}
+
+.main-sort .title{
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.main-sort .subtitle{
+  background: #005883;
+  border: 1px solid;
+  color:white;
+  padding: 10px;
+  text-align: left;
+}
+
+.main-sort .text{
+  float: left;
+  width: 60%;
+}
+
+.main-sort img{
+  max-width: 40%;
+}
+
+.main-sort .paragraph{
+  margin-top: 20px;
+  margin-bottom:20px;
+  text-align: justify;
+}
+
+.main-sort .paragraph p{
+  line-height:1.3em;
+}
+
+.main-sort .sort-code{
+  width: 100%;
+  height: 100%;
+}
+
+.main-sort .title-card{
+  background: #005883;
+  border: 1px solid;
+  color:white;
+  padding: 10px;
+  text-align: center;
+}
+
+
+/* End Bubble-Sort */
+
 @media screen and (min-width: 768px) {
     .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
     .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
