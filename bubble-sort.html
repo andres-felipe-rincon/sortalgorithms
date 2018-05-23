@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Algoritmos de Ordenamiento</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+  <!-- End Google Fonts -->
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="banner">
+        <div class="logo">
+            <img src="./img/logoUnad.png" alt="Logo blanco UNAD" />
+        </div>
+        <h1>Métodos de ordenación con programación orientada a objetos</h1>
+      </div>
+    </header>
+
+    <nav>
+      <div class="hamburger">
+        <i></i>
+      </div>
+      <ul class="flex-nav">
+        <li><a href="index.html" class="active">Inicio</a></li>
+        <li><a href="bubble-sort.html">Ordenamiento Burbuja</a></li>
+        <li><a href="selection-sort.html">Ordenamiento selección</a></li>
+        <li><a href="insert-sort.html">Ordenamiento inserción</a></li>
+        <li><a href="about.html">Autores</a></li>
+      </ul>
+    </nav>
+
+    <article class="main-sort">
+        <header>
+          <div class="title">
+            <h2>Ordenamiento Burbuja (Bubble-sort)</h2>
+          </div>
+        </header>
+        <sectio>
+          <div class="subtitle">
+            <h3>Historia</h3>
+          </div>
+          <div class="paragraph">
+            <p>El algoritmo es mencionado en varios artículos entre los años 1950 y 1962,
+            se le ha mencionado con otros nombres en estos artículos pasando por Exchange sort,
+            termino usado por la asociación para la maquinaria en la computación (ACM), en 1962
+            es utilizado por primera vez el término “Bubble Sort” por Iverson, a pesar de esto
+            el algoritmo fue oficialmente publicado en la ACM en el año de 1975.
+            Se volvió un algoritmo muy popular dentro de las personas que están iniciando
+            en el campo de la programación debido a su facilidad para entenderlo y
+            escribirlo en el lenguaje de preferencia.</p>
+          </div>
+        </section>
+        <section class="info-content">
+            <div class="subtitle">
+              <h3>Funcionamiento</h3>
+            </div>
+            <div class="text paragraph">
+              <p>La manera en que funciona este algoritmo es realizando un recorrido a una lista,
+              comparando cada elemento de la lista con el siguiente, para así determinar cuál
+              es el menor y cuál es el mayor, con esto el algoritmo realiza el intercambio de
+              los dos ítems, es necesario que el algoritmo haga varios recorridos a la lista
+              para poder realizar el ordenamiento de todos los ítems de la lista.
+
+              Debido a que tiene un orden de complejidad cuadrático O(n²) hace que sea un
+              algoritmo muy costoso para su uso, debido a que depende directamente del número,
+              ya que entre más ítems tenga más comparaciones debe de hacer y la cantidad de
+              recorridos que tendría que hacer serian n-1 cada vez.</p>
+            </div>
+            <div class="image">
+              <img src="./img/bubble-sort-example.png" alt="/bubble-sort-example">
+            </div>
+        </section>
+        <section class="info-content">
+            <div class="subtitle">
+              <h3>Implementación</h3>
+            </div>
+            <div class="paragraph">
+              <p>Para el algoritmo bubble sort podemos encontrar las siguientes implementaciones,
+              dependiendo del lenguaje de programación, a continuación, se mostrará la implementación
+              en los lenguajes de programación más usados.</p>
+            </div>
+            <div class="tabs">
+              <input id="tab1" type="radio" name="tabs" checked>
+              <label for="tab1">C++</label>
+
+              <input id="tab2" type="radio" name="tabs">
+              <label for="tab2">Java</label>
+
+              <input id="tab3" type="radio" name="tabs">
+              <label for="tab3">JavaScript</label>
+
+              <input id="tab4" type="radio" name="tabs">
+              <label for="tab4">Python</label>
+
+              <input id="tab5" type="radio" name="tabs">
+              <label for="tab5">C#</label>
+
+              <input id="tab6" type="radio" name="tabs">
+              <label for="tab6">PHP</label>
+
+              <input id="tab7" type="radio" name="tabs">
+              <label for="tab7">Visual Basic</label>
+
+              <section class="tab-section" id="content1">
+                <div class="sort-code">
+                    <pre>
+                      <code>
+void swap(int *xp, int *yp)
+{
+  int temp = *xp;
+  *xp = *yp;
+  *yp = temp;
+}
+
+void bubbleSort(int arr[], int n)
+{
+  int i, j;
+  for (i = 0; i < n-1; i++)
+    // Last i elements are already in place
+    for (j = 0; j < n-i-1; j++)
+      if (arr[j] > arr[j+1])
+        swap(&arr[j], &arr[j+1]);
+}
+                        </code>
+                    </pre>
+                </div>
+              </section>
+              <section class="tab-section" id="content2">
+                <div class="sort-code">
+                    <pre>
+                      <code>
+void bubbleSort(int arr[])
+{
+   int n = arr.length;
+   for (int i = 0; i < n-1; i++)
+   {
+      for (int j = 0; j < n-i-1; j++)
+      {
+         if (arr[j] > arr[j+1])
+         {
+            int temp = arr[j];
+            arr[j] = arr[j+1];
+            arr[j+1] = temp;
+         }
+      }
+   }
+}
+                        </code>
+                    </pre>
+                </div>
+              </section>
+              <section class="tab-section" id="content3">
+                <div class="sort-code">
+                    <pre>
+                      <code>
+function bubbleSort() {
+ var numElements = this.dataStore.length;
+ var temp;
+ for (var outer = numElements; outer >= 2; --outer) {
+    for (var inner = 0; inner <= outer-1; ++inner) {
+       if (this.dataStore[inner] > this.dataStore[inner+1]) {
+        swap(this.dataStore, inner, inner+1);
+       }
+    }
+  }
+}
+                      </code>
+                    </pre>
+                </div>
+              </section>
+              <section class="tab-section" id="content4">
+                <div class="sort-code">
+                    <pre>
+                      <code>
+def ordenamientoBurbuja(unaLista):
+    for numPasada in range(len(unaLista)-1,0,-1):
+        for i in range(numPasada):
+            if unaLista[i]>unaLista[i+1]:
+                temp = unaLista[i]
+                unaLista[i] = unaLista[i+1]
+                unaLista[i+1] = temp
+                      </code>
+                    </pre>
+                </div>
+              </section>
+              <section class="tab-section" id="content5">
+                <div class="sort-code">
+                    <pre>
+                      <code>
+static void bubbleSort(int []arr)
+{
+    int n = arr.Length;
+    for (int i = 0; i < n - 1; i++)
+    {
+        for (int j = 0; j < n - i - 1; j++)
+        {
+            if (arr[j] > arr[j + 1])
+            {
+                // swap temp and arr[i]
+                int temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+       }
+    }
+}
+                      </code>
+                    </pre>
+                </div>
+              </section>
+              <section class="tab-section" id="content6">
+                <div class="sort-code">
+                    <pre>
+                      <code>
+function bubbleSort ($items) {
+   $size = count($items);
+   for ($i=0; $i<$size; $i++) {
+        for ($j=0; $j<$size-1-$i; $j++) {
+             if ($items[$j+1] < $items[$j]) {
+                 arraySwap($items, $j, $j+1);
+             }
+        }
+   }
+   return $items;
+}
+
+function arraySwap (&$arr, $index1, $index2) {
+   list($arr[$index1], $arr[$index2]) = array($arr[$index2], $arr[$index1]);
+}
+
+                      </code>
+                    </pre>
+                </div>
+              </section>
+              <section class="tab-section" id="content7">
+                <div class="sort-code">
+                    <pre>
+                      <code>
+Public Sub BubbleSort(ByRef ArrayIn() As Long)
+  Dim i, j    As Integer
+  Dim t       As Long
+  For i = UBound(ArrayIn) To 0 Step -1
+    For j = 0 To i - 1
+        If ArrayIn(j) > ArrayIn(j + 1) Then
+            Call swap(ArrayIn(j), ArrayIn(j + 1))
+        End If
+    Next j
+  Next i
+End Sub
+
+Private Sub swap(ByRef data1 As Long, ByRef data2 As Long)
+  Dim temp As Long
+  temp = data1
+  data1 = data2
+  data2 = temp
+End Sub
+
+                      </code>
+                    </pre>
+                </div>
+              </section>
+            </div>
+        </section>
+        <sectio>
+          <div class="subtitle">
+            <h3>Ejemplo</h3>
+          </div>
+          <div class="paragraph">
+            <p> Lista x  = [5,3,1,2,4]</p>
+            <p> Se inicia comparando el primer elemento con el segundo, 5 es mayor a  3,
+                con esto realizamos el intercambio de los dos elementos estableciendo el 3
+                como el menor y el 5 como el mayor, quedando el arreglo de la siguiente manera:</p>
+            <p> x = [3,5,1,2,4]</p>
+            <p> Se vuelve a realizar otro recorrido en el algoritmo, comparando si el 5 es mayor a 1, y realizando el intercambio.</p>
+            <p> x = [3,1,5,2,4]</p>
+            <p> Se vuelve a realizar otro recorrido en el algoritmo, comparando si el 5 es mayor a 2, y realizando el intercambio.</p>
+            <p> x = [3,1,2,5,4]</p>
+            <p> Se vuelve a realizar otro recorrido en el algoritmo, comparando si el 5 es mayor a 4, y realizando el intercambio.</p>
+            <p> x = [3,1,2,4,5]</p>
+            <p> Se vuelve a realizar otro recorrido en el algoritmo, comparando si el 3 es mayor a 1, y realizando el intercambio.</p>
+            <p> x = [1,3,2,4,5]</p>
+            <p>Se vuelve a realizar otro recorrido en el algoritmo, comparando si el 3 es mayor a 2, y realizando el intercambio.</p>
+            <p> x = [1,2,3,4,5]</p>
+          </div>
+        </section>
+        <section class="info-content">
+            <div class="subtitle">
+              <h3>Autoevaluación</h3>
+            </div>
+            <div class="paragraph">
+              <p>Suponga que debe de ordenar la siguiente lista de números: [15, 3, 25,13,,9,1,10,2,8,12].
+                ¿Cuál de las siguientes listas representa la lista parcialmente ordenada tras tres pasadas completas del ordenamiento burbuja?</p>
+              <p>a. [9,1,3,15,10,8,13,2,10,12]</p>
+              <p>b. [3,9,1,10,2,8,12,13,15,25]</p>
+              <p>c. [1,3,10,9,2,8,15,12,25]</p>
+              <p>d. Ninguna de las anteriores</p>
+            </div>
+        </section>
+    </article>
+    <footer>
+        <p class="text">Todos los Derechos Reservados® Grupo 12™</p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
