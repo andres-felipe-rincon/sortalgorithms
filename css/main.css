@@ -590,6 +590,11 @@ pre {
 .main-sort .text{
   float: left;
   width: 60%;
+  min-width: 560px;
+}
+
+.main-sort .image{
+  margin-top: 10px;
 }
 
 .main-sort img{
