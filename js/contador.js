@@ -11,7 +11,7 @@
       while (display_div.hasChildNodes()) {
           display_div.removeChild(display_div.lastChild);
       }
-      str_counter_0++;
+      //str_counter_0++;
       if (str_counter_0 > 99) {
         str_counter_0 = 10; // reset count
         str_counter_1++;    // increase next count
