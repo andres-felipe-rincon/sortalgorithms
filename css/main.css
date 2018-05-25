@@ -1,8 +1,8 @@
-/* 
+/*
 html5doctor.com Reset Stylesheet
 v1.6.1
 Last Updated: 2010-09-17
-Author: Richard Clark - http://richclarkdesign.com 
+Author: Richard Clark - http://richclarkdesign.com
 Twitter: @rich_clark
 */
 
@@ -15,7 +15,7 @@ b, i,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure, 
+article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
     background:transparent;
@@ -24,7 +24,7 @@ time, mark, audio, video {
     margin:0;
     outline:0;
     padding:0;
-    vertical-align:baseline;    
+    vertical-align:baseline;
 }
 
 body {
@@ -32,7 +32,7 @@ body {
 }
 
 article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section { 
+footer,header,hgroup,menu,nav,section {
     display:block;
 }
 
@@ -55,7 +55,7 @@ a {
     font-size:100%;
     margin:0;
     padding:0;
-    vertical-align:baseline;    
+    vertical-align:baseline;
 }
 
 /* change colours to suit your needs */
@@ -68,7 +68,7 @@ ins {
 /* change colours to suit your needs */
 mark {
     background-color:#ff9;
-    color:#000; 
+    color:#000;
     font-style:italic;
     font-weight:bold;
 }
@@ -89,7 +89,7 @@ table {
 
 /* change border colour to suit your needs */
 hr {
-    border:0;   
+    border:0;
     border-top:1px solid #cccccc;
     display:block;
     height:1px;
@@ -107,12 +107,12 @@ input, select {
 
 body {
     color: #5b5b5e;
-    font-family: 'Roboto', sans-serif;    
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
     display: -webkit-flex;
-    display: flex;  
+    display: flex;
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap ;
     text-align: center;
@@ -121,7 +121,7 @@ body {
 .container > * {
     -webkit-flex: 1 100%;
     flex: 1 100%;
-    padding: 15px;    
+    padding: 15px;
 }
 
 /* Start Mobile Header Section */
@@ -129,8 +129,8 @@ header .banner {
     background: #005883;
     border: 1px solid;
     box-shadow: 4px 8px #F0B429;
-    color:white;    
-    padding: 10px;    
+    color:white;
+    padding: 10px;
 }
 
 header .banner h1 {
@@ -147,8 +147,8 @@ header .banner h1 {
     color: transparent;
     display: none;
     flex: 1;
-    text-align: center;       
-    transition: height 1s ease;    
+    text-align: center;
+    transition: height 1s ease;
 }
 .flex-nav > li:not(:first-child) {
     border-left: none;
@@ -156,9 +156,9 @@ header .banner h1 {
 .flex-nav li a {
     color: white;
     margin: 0 auto;
-    display: inline-block; 
+    display: inline-block;
     font-weight: 400;
-    padding: 20px 0;  
+    padding: 20px 0;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
@@ -167,7 +167,7 @@ header .banner h1 {
 }
 nav .hamburger {
     border: 3px solid #ecf0f1;
-    border-radius: 5px;  
+    border-radius: 5px;
     display: inline-block;
     height: 36px;
     margin: 5px;
@@ -175,7 +175,7 @@ nav .hamburger {
 }
 nav .hamburger i, nav .hamburger i:before, nav .hamburger i:after {
     background: #ecf0f1;
-    border-radius: 4px;  
+    border-radius: 4px;
     content: '';
     cursor: pointer;
     height: 4px;
@@ -188,7 +188,7 @@ nav .hamburger i {
     display: block;
     left: 6px;
     position: relative;
-    top: 16px;  
+    top: 16px;
 }
 nav .hamburger i:before {
     position: absolute;
@@ -219,7 +219,7 @@ nav.active .hamburger i:after {
 nav.active .flex-nav li {
     color: inherit;
     display: block;
-    height: initial;    
+    height: initial;
 }
 /* End Mobile Nav Section */
 
@@ -237,7 +237,7 @@ nav.active .flex-nav li {
     flex-direction: column;
 }
 .info-content h2 {
-    font-size: 1.6em;    
+    font-size: 1.6em;
 }
 /* End main Content Section */
 
@@ -413,8 +413,8 @@ nav.active .flex-nav li {
 }
 .profile-card #front #top-pic {
     height: 50%;
-    width: 100%;    
-    background-size: cover;    
+    width: 100%;
+    background-size: cover;
 }
 .profile-card #front #top-pic img {
     max-width: 300px;
@@ -593,8 +593,13 @@ pre {
   min-width: 560px;
 }
 
+.main-sort .image-gif{
+  margin-top: 10px;
+}
+
 .main-sort .image{
   margin-top: 10px;
+  width: 100%;
 }
 
 .main-sort img{
@@ -718,8 +723,8 @@ pre {
     footer {-webkit-order:3;order:3;}
 
     /* Start Header Section */
-    
-    /* End Header Section */    
+
+    /* End Header Section */
 }
 
 @media screen and (min-width: 992px) {
@@ -735,11 +740,11 @@ pre {
         position: absolute;
         transform: translate(-10%, 80%);
     }
-    /* End Header Section */ 
+    /* End Header Section */
     /* Start Nav Section */
     .flex-nav {
         display: flex;
-        flex-direction: row;        
+        flex-direction: row;
     }
     .flex-nav li {
         color: inherit;
@@ -753,11 +758,11 @@ pre {
         background: #2980b9;
     }
     .flex-nav li a {
-        text-transform: capitalize;        
+        text-transform: capitalize;
     }
     /* Hamburger Icon */
     nav .hamburger {
-        display: none;  
+        display: none;
     }
     /* End Nav Section */
     /* Start main Content Section */
@@ -766,7 +771,7 @@ pre {
     }
     .info-content h2 {
         font-size: 2em;
-        margin-bottom: 10px;        
+        margin-bottom: 10px;
     }
     /* End main Content Section */
     /* Start Card Content Section */
@@ -778,6 +783,6 @@ pre {
 
 @media screen and (min-width: 1200px) {
     /* Start Header Section */
-    
-    /* End Header Section */ 
+
+    /* End Header Section */
 }
