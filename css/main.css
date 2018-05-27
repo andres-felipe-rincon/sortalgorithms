@@ -707,6 +707,12 @@ pre {
 .main-sort #tab7:checked ~ #content7 {
   display: block;
 }
+
+.activities {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
 /*
 @media screen and (max-width: 650px) {
   .main-sort label {
