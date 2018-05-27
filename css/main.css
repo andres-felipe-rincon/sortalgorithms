@@ -121,7 +121,7 @@ body {
 .container > * {
     -webkit-flex: 1 100%;
     flex: 1 100%;
-    padding: 15px;
+    padding: 10px;
 }
 
 /* Start Mobile Header Section */
@@ -238,6 +238,10 @@ nav.active .flex-nav li {
 }
 .info-content h2 {
     font-size: 1.6em;
+}
+
+.main-sort {
+    max-width: 95%;
 }
 /* End main Content Section */
 
@@ -588,9 +592,8 @@ pre {
 }
 
 .main-sort .text{
-  float: left;
-  width: 60%;
-  min-width: 560px;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-sort .image-gif{
@@ -697,7 +700,7 @@ pre {
 .main-sort #tab7:checked ~ #content7 {
   display: block;
 }
-
+/*
 @media screen and (max-width: 650px) {
   .main-sort label {
     font-size: 0;
@@ -713,7 +716,13 @@ pre {
     padding: 15px;
   }
 }
+*/
 
+/* Section : Actividades */
+
+.eval {
+    max-width: 100%;
+}
 
 /* End Bubble-Sort */
 
