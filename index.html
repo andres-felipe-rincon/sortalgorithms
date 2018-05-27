@@ -11,7 +11,7 @@
   <!-- End Google Fonts -->
   <link rel="stylesheet" href="./css/main.css">
 </head>
-<body>
+<body onload="modify_qty(1)">
   <div class="container">
     <header>
       <div class="banner">
@@ -124,12 +124,7 @@
 
         <!-- start contador -->
 
-        <body onload="incrementCount(10)">
-          <div class="main_container" id="id_main_container">
-            <div class="container_inner" id="display_div_id">
-            </div>
-          </div>
-        </body>
+        <input class="qty" id="qty" value="0" disabled />
         
         <!-- end contador -->
 
